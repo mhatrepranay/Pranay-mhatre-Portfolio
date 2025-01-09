@@ -3,11 +3,9 @@ import { Nav, NavLink, NavbarContainer, NavLogo, NavItems, GitHubButton, ButtonC
 import { FaBars } from 'react-icons/fa';
 import { IoClose } from "react-icons/io5";
 import { Bio } from '../../data/constants';
-import { useTheme } from 'styled-components';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const theme = useTheme();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 

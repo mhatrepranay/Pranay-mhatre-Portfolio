@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { useInView } from 'react-intersection-observer';
 import { skills } from '../../data/constants';
 
-// Fade in from left
-const fadeInLeft = keyframes`
-  0% { opacity: 0; transform: translateX(-50px); }
-  100% { opacity: 1; transform: translateX(0); }
-`;
 
-// Fade in from right
-const fadeInRight = keyframes`
-  0% { opacity: 0; transform: translateX(50px); }
-  100% { opacity: 1; transform: translateX(0); }
-`;
+
+
 
 const Container = styled.div`
   display: flex;

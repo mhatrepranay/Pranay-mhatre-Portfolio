@@ -9,8 +9,6 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { education, experiences } from '../../data/constants';
 import EducationCard from '../Cards/EducationCard';
-import { WhiteParticle1 } from '../HeroBgAnimation/HeroBgAnimationStyle';
-import { EX } from '../Experience/ex';
 
 const Container = styled.div`
     display: flex;
@@ -82,48 +80,7 @@ const TimelineSection = styled.div`
 
 
 const index = () => {
-    const renderParticles = () => {
-        const particles = [];
-        for (let i = 0; i < 300; i++) {
-            // Generate random size between 5px and 20px
-            const size = Math.floor(Math.random() * 0.4) + 1; // Adjust the range as needed
-            particles.push(
-                <EX
-                    key={i}
-                    style={{
-                        top: `${Math.random() * 150}vh`,
-                        left: `${Math.random() * 100}vw`,
-                        animationDuration: `${Math.random() * 40 + 1}s`,
-                        width: `${size}px`,
-                        height: `${size}px`,
-                        '--x': Math.random()
-                    }}
-                />
-            );
-        }
-        return particles;
-    };
-    const renderParticles2 = () => {
-        const particles = [];
-        for (let i = 0; i < 50; i++) {
-            // Generate random size between 5px and 20px
-            const size = Math.floor(Math.random() * 15) + 1; // Adjust the range as needed
-            particles.push(
-                <WhiteParticle1
-                    key={i}
-                    style={{
-                        top: `${Math.random() * 2}vh`,
-                        left: `${Math.random() * 200}vw`,
-                        animationDuration: `${Math.random() * 20 + 1}s`,
-                        width: `${size}px`,
-                        height: `${size}px`,
-                        '--x': Math.random()
-                    }}
-                />
-            );
-        }
-        return particles;
-    };
+
 
     return (
         <Container id="education">

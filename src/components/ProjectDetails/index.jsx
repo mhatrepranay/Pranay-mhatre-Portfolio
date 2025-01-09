@@ -228,7 +228,7 @@ const index = ({ openModal, setOpenModal }) => {
           )}
           <ButtonGroup>
             <Button href={project?.github} target="new">View Code</Button>
-            {project.id == 4 ? (
+            {project.id === 4 ? (
               <Button href={project?.webapp} target="new">Open Video</Button>
 
             ) : (

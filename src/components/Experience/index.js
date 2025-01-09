@@ -9,8 +9,6 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import ExperienceCard from '../Cards/ExperienceCard';
 import { experiences } from '../../data/constants';
-import { WhiteParticle, WhiteParticle1 } from '../HeroBgAnimation/HeroBgAnimationStyle';
-import { EX } from './ex';
 
 const Container = styled.div`
     display: flex;
@@ -52,17 +50,7 @@ margin-top: 20px;
   }
 `;
 
-const Desc = styled.div`
-    font-size: 18px;
-    padding:5px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
-`;
+
 
 const TimelineSection = styled.div`
     width: 100%;
@@ -78,48 +66,8 @@ const TimelineSection = styled.div`
 
 
 const index = () => {
-    const renderParticles = () => {
-        const particles = [];
-        for (let i = 0; i < 500; i++) {
-            // Generate random size between 5px and 20px
-            const size = Math.floor(Math.random() * 0.4) + 1; // Adjust the range as needed
-            particles.push(
-                <EX
-                    key={i}
-                    style={{
-                        top: `${Math.random() * 150}vh`,
-                        left: `${Math.random() * 100}vw`,
-                        animationDuration: `${Math.random() * 40 + 1}s`,
-                        width: `${size}px`,
-                        height: `${size}px`,
-                        '--x': Math.random()
-                    }}
-                />
-            );
-        }
-        return particles;
-    };
-    const renderParticles2 = () => {
-        const particles = [];
-        for (let i = 0; i < 50; i++) {
-            // Generate random size between 5px and 20px
-            const size = Math.floor(Math.random() * 15) + 1; // Adjust the range as needed
-            particles.push(
-                <WhiteParticle1
-                    key={i}
-                    style={{
-                        top: `${Math.random() * 2}vh`,
-                        left: `${Math.random() * 200}vw`,
-                        animationDuration: `${Math.random() * 20 + 1}s`,
-                        width: `${size}px`,
-                        height: `${size}px`,
-                        '--x': Math.random()
-                    }}
-                />
-            );
-        }
-        return particles;
-    };
+
+
 
     return (
         <Container id="experience">

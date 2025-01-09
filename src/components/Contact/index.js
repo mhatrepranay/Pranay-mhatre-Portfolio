@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
-import { EX } from '../Experience/ex';
-import { WhiteParticle1 } from '../HeroBgAnimation/HeroBgAnimationStyle';
 
 const Container = styled.div`
 display: flex;
@@ -127,48 +125,7 @@ const ContactButton = styled.input`
 
 
 const Contact = () => {
-  const renderParticles = () => {
-    const particles = [];
-    for (let i = 0; i < 300; i++) {
-      // Generate random size between 5px and 20px
-      const size = Math.floor(Math.random() * 0.4) + 1; // Adjust the range as needed
-      particles.push(
-        <EX
-          key={i}
-          style={{
-            top: `${Math.random() * 150}vh`,
-            left: `${Math.random() * 100}vw`,
-            animationDuration: `${Math.random() * 40 + 1}s`,
-            width: `${size}px`,
-            height: `${size}px`,
-            '--x': Math.random()
-          }}
-        />
-      );
-    }
-    return particles;
-  };
-  const renderParticles2 = () => {
-    const particles = [];
-    for (let i = 0; i < 50; i++) {
-      // Generate random size between 5px and 20px
-      const size = Math.floor(Math.random() * 15) + 1; // Adjust the range as needed
-      particles.push(
-        <WhiteParticle1
-          key={i}
-          style={{
-            top: `${Math.random() * 2}vh`,
-            left: `${Math.random() * 200}vw`,
-            animationDuration: `${Math.random() * 30 + 1}s`,
-            width: `${size}px`,
-            height: `${size}px`,
-            '--x': Math.random()
-          }}
-        />
-      );
-    }
-    return particles;
-  };
+
 
   //hooks
   const [open, setOpen] = React.useState(false);

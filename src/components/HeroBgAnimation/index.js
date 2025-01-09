@@ -1,5 +1,5 @@
 import React from 'react';
-import { Div, WhiteParticle, WhiteParticle1 } from './HeroBgAnimationStyle'; // Import your styled components or elements
+import { Div } from './HeroBgAnimationStyle'; // Import your styled components or elements
 
 const HeroBgAnimation = () => {
 
