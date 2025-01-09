@@ -1,0 +1,52 @@
+.project-detail {
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.project-carousel {
+    margin-bottom: 30px;
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 400px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area without distorting the image */
+    border-radius: 12px;
+}
+
+.project-content {
+    margin-top: 20px;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.award-item {
+    display: flex;
+    align-items: center;
+}
