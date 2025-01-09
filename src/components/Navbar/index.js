@@ -13,10 +13,10 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: "white", cursor: 'pointer' }}>
+          <a href='/' style={{ display: "flex", alignItems: "center", color: "white", cursor: 'pointer' }}>
             <span style={{ color: "violet", fontSize: "45px" }}>&lt; </span>
             <span style={{ color: "white" }}>Pranay </span>
-            <span style={{ color: "violet", fontSize: "25px" }}>/ </span>
+            <span style={{ color: "violet", fontSize: "35px" }}>/ </span>
             <span style={{ color: "white" }}>Mhatre </span>
             <span style={{ color: "violet", fontSize: "45px" }}>&gt; </span>
           </a>
