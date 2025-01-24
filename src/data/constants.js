@@ -167,6 +167,8 @@ export const experiences = [
 
     skills: [
       "React.js",
+      "Node.js",
+      "Express.js",
       "React Native",
       "App Development",
       "Web Technology",

@@ -13,7 +13,7 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to='/'>
-          <a href='/' style={{ display: "flex", alignItems: "center", color: "white", cursor: 'pointer' }}>
+          <a href='/' style={{ display: "flex", alignItems: "center", textDecoration: "none", cursor: 'pointer' }}>
             <span style={{ color: "violet", fontSize: "45px" }}>&lt; </span>
             <span style={{ color: "white" }}>Pranay </span>
             <span style={{ color: "violet", fontSize: "35px" }}>/ </span>
